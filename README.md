@@ -1,3 +1,3 @@
 # hg38
 
-This folder provides examples for Bioconductor users to build TxDb package from either UCSC Genomce Browser tracks, Biomart, or downloaded GFF files. 
+This folder provides examples for Bioconductor users to build TxDb package from either UCSC Genomce Browser tracks, Biomart, or downloaded GFF files for genome build hg38.  While the Gencode tracks on UCSC Genome Brower keep updating, the functions in Bioconductor's GenomicFeatures - supportedUCSCtables(genome="hg38") - is catching the updates sometimes. As a result, GenomicFeatures::makeTxDbPackageFromUCSC() and GenomicFeatures::makeTxDbFromUCSC() might return errors. A detour way to build the TxDb or package is provided here. One of the major examples shows you  how to extrack Gencode tracks and its table from UCSC Genome Browser and make a Bioconductor TxDb packgae.
